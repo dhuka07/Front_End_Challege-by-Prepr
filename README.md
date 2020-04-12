@@ -1,5 +1,5 @@
 # Front_End_Challege-by-Prepr
-MY task is to redesign a few key pages of the Prepr Network.
+My task is to redesign a few key pages of the Prepr Network.
 
 Reimagine and create frontend webpages of the following pages (and possible sub-pages):
 
