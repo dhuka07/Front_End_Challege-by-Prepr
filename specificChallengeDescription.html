@@ -1,0 +1,320 @@
+<!--Author: SAIFALI DHUKA-->
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="images/logo.png" rel="icon" sizes="20x20" type="image/gif" />
+    <title>Challenge Description-Prepr</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Serif:400,400i,700,700i|Source+Sans+Pro:400,400i,600,600i" rel="stylesheet">
+    <link rel="stylesheet" href="css/ChallengeDesc-main.css" type="text/css" media="all">
+    <link rel="stylesheet" href="css/Descriptionstyle.css" type="text/css" >
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <script src="scripts/functions.js" defer></script>
+    <script>
+            function openTab(evt, tabName) {
+              var i, tabcontent, tablinks;
+              tabcontent = document.getElementsByClassName("tabcontent");
+              for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+              }
+              tablinks = document.getElementsByClassName("tablinks");
+              for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+              }
+              document.getElementById(tabName).style.display = "block";
+              evt.currentTarget.className += " active";
+            }
+            </script>
+            <script>
+                    function myFunction() {
+                      var dots = document.getElementById("dots");
+                      var moreText = document.getElementById("seemorecontent");
+                      var btnText = document.getElementById("more");
+                    
+                      if (dots.style.display === "none") {
+                        dots.style.display = "inline";
+                        btnText.innerHTML = "Read more"; 
+                        moreText.style.display = "none";
+                      } else {
+                        dots.style.display = "none";
+                        btnText.innerHTML = "Read less"; 
+                        moreText.style.display = "inline";
+                      }
+                    }
+             </script>         
+</head>
+
+<body class="site">
+    <a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+
+    <header class="masthead">
+            
+            <h1 class="site-title"> <a href="index.html"> <img src="images/logo.png" alt="Avatar" class="logo">  </a>
+                <center>
+                <div class="search">
+                   <input type="text" class="searchTerm" placeholder="What are you looking for?">
+                   <button type="submit" class="searchButton">
+                     <i class="fa fa-search"></i>
+                  </button>
+                </div>
+                </center>
+            </h1>
+    </header><!-- .masthead -->
+
+	<section class="main-nav">
+		<button class="trigger" aria-expanded="false">Menu<span class="screen-reader-text">Reveal menu</span></button>
+
+		<nav>
+                <ul>
+                        <li> <img src="images/avatar.jpeg" alt="Avatar" class="avatar" style=" height:100px; width:100px; "></li>
+                        <li><a href="index.html"> <i class="fa fa-fw fa-home"></i>Home</a></li>
+                        <li><a href="#"><i class="fa fa-fw fa-binoculars"></i>Explore</a></li>
+                        
+                        <li><a href="#"><i class="fa fa-fw fa-file"></i>Projects</a></li>
+                        <li><a href="#"><i class="fa fa-fw fa-flask"></i> Labs</a></li>
+                        <li><a href="#"><i class="fa fa-fw fa-envelope"></i> Inbox</a></li>
+                        <li><a href="#"><i class="fa fa-fw fa-bullhorn"></i> Resource</a></li>
+                        <li><a href="#"><i class="fa fa-fw fa-copy"></i> News Feed</a></li>
+                </ul>
+		</nav>
+	</section><!-- .main-nav -->
+
+    <main id="content" class="main-area">
+            
+         <ul class="cards">
+                <li class="card-item double">
+                    <a href="#content">
+                        <figure class="card">
+                            <img src="images/f1.jpeg" alt="Challenge.">
+                            <figcaption class="caption">
+                                <h3 class="caption-title">Challenge - Front End Developer Work Challenge</h3>
+                                <p> Front End Developer Work Challenge </p>
+                            </figcaption>
+                        </figure>
+                    </a>
+                </li>
+
+            <section  class="content">
+                
+                    <h2 id="content">Front End Developer Work Challenge</h2>
+                <ul>
+                    <li>
+                     <i id="like" class="fa fa-fw fa-share"></i>
+                    </li>        
+                <li>
+                <i id="like" class="fa fa-fw fa-heart"></i>
+                </li>
+                                 
+                <li>
+                <button type="button" class="follow">Follow</button>
+                </li> 
+                <li>
+                <button type="button" class="submit">Submit</button>
+                </li> 
+                <li class="bar">
+                        <label for="bar">April 9th:</label>
+                        <progress id="bar" class="progressbar" value="70" max="100"> 32% </progress>
+                        <label for="file">April 12th:</label>
+                </li>
+                </ul>
+                <br>
+                <aside>
+                <h3>Requirements: Apply by 12th April 2020</h3>
+                <i class="fa fa-fw fa-study"></i>
+                </aside>            
+    
+    
+                <h3>General Overview</h3>
+                <p>Your task is to redesign a few key pages of the Prepr Network.
+                
+                Reimagine and create frontend webpages of the following pages (and possible sub-pages):
+                
+                 <br>
+                Explore page (https://preprlabs.org/)
+                <br>
+                Projects page (https://preprlabs.org/myProjects)
+                <br>
+                Challenges page (https://preprlabs.org/list/challenge)
+                 <br>
+                Challenge details page (https://preprlabs.org/challengeManager/front-end-developer-work-challenge)
+                 <br>
+                Labs page (https://preprlabs.org/joinedLab)
+                <br>
+                <br>
+                Do not be restrained by the current design and layout of the pages. However, do ensure that pages can perform their respective functions. Feel free to add additional <span id="dots">...</span><span id="seemorecontent"> and functions, anything that you believe will result in the best user experience.
+                
+                 
+                <br>
+                (eg. In the explore page, each challenge card can contain more information than just the description)
+                
+                 
+                <br>
+                You may use any frontend technologies you want. You do not need to create any backend functionality (you can hardcode details and images into the web pages).
+                
+                <br>
+                <br>
+                <b>Submission Process: </b>
+                <br>
+                Please begin by creating a Project. Your Project should contain both the final output and a Github link to your source code. Please name all of your files and documents using the following convention:
+                <br>
+                John_Smith_FrontEnd_Developer_Nameofyourfile.
+                <br>
+                Once the project is completed, you will be able to submit it here to the Work Challenge. 
+                
+                <br> 
+                <br>
+                <b>Evaluation Criteria: </b>
+                <br>
+                25% on your approach to tackling the problem and the steps you took to get to your solution and final deliverable
+                <br>
+                25% on how well you used various tools & processes to tackle the challenge
+                <br>
+                50% on the final solution and output of your challenge</span>
+            
+                <b onclick="myFunction()" id="more">Read more</b>
+            </p>
+                
+          </div>
+    </p>
+    <div class="tab">
+            <button class="tablinks" onclick="openTab(event, 'Discussion')">Discussion</button>
+            <button class="tablinks" onclick="openTab(event, 'Member')">Member</button>
+            <button class="tablinks" onclick="openTab(event, 'Submission')">Submission</button>
+          </div>
+          
+          <div id="Discussion" class="tabcontent">
+            <h3 style="text-align:center;">Discussion</h3>
+            
+            <div class="container">
+                    <img src="images/avatar.jpeg" alt="Avatar" style="width:90px">
+                    <p><span>Saifali Dhuka.</span> 7th June 2017</p>
+                    <p>Dhuka saved us from a web disaster.</p>
+                    <i>5:56 am Wednesday</i>
+                       <div class="tags">
+                        <i class="fa  fa-thumbs-up"></i>
+                        <i class="fa  fa-thumbs-down"></i>
+                        <i>  Reply</i>
+                         </div>
+                  </div>
+                  
+                  <div class="container">
+                        <img src="images/avatar2.png" alt="Avatar" style="width:90px">
+                        <p><span>Naurin Momin.</span> 1st July 2017</p>
+                        <p>No one is better than Dhuka.</p>
+                        <i>1:07 pm Sunday</i>
+                        <div class="tags">
+                         <i class="fa  fa-thumbs-up"></i>
+                         <i class="fa  fa-thumbs-down"></i>
+                         <i>  Reply</i>
+                          </div>
+                      </div>
+
+                  <div class="container">
+                    <img src="images/avatar.jpeg" alt="Avatar" style="width:90px">
+                    <p><span>Rebecca Flex.</span> 19 Oct</p>
+                    <p>No one is better than Dhuka have you seen saifalidhuka.com???</p>
+                    <i>7:56 am Tuesday</i>
+                    <div class="tags">
+                     <i class="fa  fa-thumbs-up"></i>
+                     <i class="fa  fa-thumbs-down"></i>
+                     <i>  Reply</i>
+                      </div>
+                  </div>
+
+                  <div class="container">
+                        <img src="images/avatar2.png" alt="Avatar" style="width:90px">
+                        <p><span>Rebecca Flex.</span> 14 Feb</p>
+                        <p>Yes its realyy amazing.....</p>
+                        <i>9:06 am Monday</i>
+                        <div class="tags">
+                         <i class="fa  fa-thumbs-up"></i>
+                         <i class="fa  fa-thumbs-down"></i>
+                         <i>  Reply</i>
+                          </div>
+                      </div>
+                      <form>
+                     <input type="text" placeholder="Add your comment!" id="comment" name="comment">
+                      </form>
+                  
+          </div>
+          
+          <div id="Member" class="tabcontent">
+            
+            <h3 style="text-align:center;">Members</h3>
+            <h4 style="color:#27ae60;">Admin and Moderators:</h4> 
+            <img src="images/avatar2.png" alt="Avatar" style="width:90px; border-radius:50%; ">
+            <span> John Smith</span> 
+            <i class="fa  fa-plus" style="margin-left: 20px; cursor:pointer; font-size: 25px;"></i>
+
+            <hr>
+            <h4 style="color:#27ae60;">General Members</h4> 
+            <img src="images/avatar.jpeg" alt="Avatar" style="width:90px; border-radius:50%;">
+            <span>Saifali Dhuka.</span> 
+            <i class="fa  fa-plus" style="margin-left: 20px; cursor:pointer; font-size: 25px;"></i>
+            <hr>
+            <br>
+            <img src="images/avatar2.png" alt="Avatar" style="width:90px; border-radius:50%;">
+            <span>Naurin Momin.</span> 
+            <i class="fa  fa-plus" style="margin-left: 20px; cursor:pointer; font-size: 25px;"></i>
+            <hr>
+            <br>
+            <img src="images/avatar.jpeg" alt="Avatar" style="width:90px; border-radius:50%;">
+            <span>Rebecca Flex.</span> 
+            <i class="fa  fa-plus" style="margin-left: 20px; cursor:pointer; font-size: 25px;"></i>
+
+          </div>
+          
+          <div id="Submission" class="tabcontent">
+            <h3 style="text-align:center;">Submission</h3>
+            
+                    <img src="images/f1.jpeg" alt="project" style="width:50%;">
+                    <div class="text-block">
+                      <h3>John_Smith_FrontEnd_Developer_Nameofyourfile.</h3>
+                      <p>Currently: IN PROGRESS <br> https://github.com/akassab/PreprFrontEndChallenge/blob/master/readme.md</p>
+                    </div>
+                  
+                  
+                  
+                    <img src="images/f1.jpeg" alt="project" style="width:50%;">
+                    <div class="text-block">
+                      <h3>John_Smith_FrontEnd_Developer_Nameofyourfile.</h3>
+                      <p>Currently: IN PROGRESS <br> https://github.com/akassab/PreprFrontEndChallenge/blob/master/readme.md</p>
+                    
+                  </div>
+                  
+                 
+                    <img src="images/f1.jpeg" alt="project" style="width:50%;">
+                    <div class="text-block">
+                      <h3>John_Smith_FrontEnd_Developer_Nameofyourfile.</h3>
+                      <p>Currently: IN PROGRESS <br> https://github.com/akassab/PreprFrontEndChallenge/blob/master/readme.md</p>
+                    
+                  </div>
+          </div>
+    </section>
+    </main>
+
+	<section class="sidebar">
+		<aside class="twin">
+            <h2 class="content-title">Hosted By:</h2>
+            <a href="#" ><img src="images/logo.png" alt="Avatar" class="log"> </a>
+			<p>The Prepr Network connects students and start-ups to employees and employers in order to build skills, create verifiable portfolios and tackle challenges. We do this by creating dedicated labs for individuals and teams to co-learn and co-lab together in order to co-solve organizational challenges.</p>
+		</aside>
+		<aside class="twin">
+            <h2 class="content-title">Sponsered By:</h2>
+            <a href="#" ><img src="images/spon.jpeg" alt="Avatar" class="spon"> </a>
+			<p>This is the official collaboration space for Prepr Summer Interns. Feel free to discuss about anything here!</p>
+		</aside>
+	</section><!-- .twins -->
+    
+	<footer class="colophon">
+		<aside>All photos & Content: <a href="https://preprlabs.org/" target="_blank" rel="nofollow">Preplabs</a>.</aside>
+        <aside>Layout Created by Saifali Dhuka, visit <a href="https://www.linkedin.com/in/saifali-dhuka" target="_blank" rel="nofollow"> <i class="fa fa-fw fa-linkedin"></i></a> <a href="https://github.com/dhuka07"> <i class="fa fa-fw fa-github"></i> </a> </aside>
+    </footer>
+
+</body>
+
+</html>

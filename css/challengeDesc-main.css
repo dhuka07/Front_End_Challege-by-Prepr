@@ -1,0 +1,497 @@
+/*--------------------------------------------------------------
+Accessibility
+--------------------------------------------------------------*/
+/* Text meant only for screen readers */
+.screen-reader-text {
+	clip: rect(1px, 1px, 1px, 1px);
+	position: absolute !important;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+}
+
+.screen-reader-text:hover,
+.screen-reader-text:active,
+.screen-reader-text:focus {
+	background-color: #f1f1f1;
+	border-radius: 3px;
+	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+	clip: auto !important;
+	color: #21759b;
+	display: block;
+	font-size: 14px;
+	font-weight: bold;
+	height: auto;
+	left: 5px;
+	line-height: normal;
+	padding: 15px 23px 14px;
+	text-decoration: none;
+	top: 5px;
+	width: auto;
+	z-index: 100000; /* Above WP toolbar */
+}
+
+/*--------------------------------------------------------------
+Typography
+--------------------------------------------------------------*/
+
+body {
+	margin: 0;
+}
+
+body,
+button,
+input,
+select,
+textarea {
+	font-family: 'Source Sans Pro', 'Helvetica', 'Arial', sans-serif;
+	font-size: 18px;
+	line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	clear: both;
+}
+
+p {
+	margin-bottom: 1.5em;
+}
+
+b,
+strong {
+	font-weight: bold;
+}
+
+dfn,
+cite,
+em,
+i {
+	font-style: italic;
+}
+
+blockquote {
+	margin: 0 1.5em;
+}
+
+address {
+	margin: 0 0 1.5em;
+}
+
+pre {
+    display: inline-block;
+    font-family: "Courier 10 Pitch", Courier, monospace;
+    color: #ddca7e;
+    background: #282c34;
+	padding: .5em .8em;
+    border-radius: .2em;
+}
+
+code,
+kbd,
+tt,
+var {
+	font: 15px Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+}
+
+abbr,
+acronym {
+	border-bottom: 1px dotted #666;
+	cursor: help;
+}
+
+mark,
+ins {
+	background: #fff9c0;
+	text-decoration: none;
+}
+
+sup,
+sub {
+	font-size: 75%;
+	height: 0;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+}
+
+sup {
+	bottom: 1ex;
+}
+
+sub {
+	top: .5ex;
+}
+
+small {
+	font-size: 75%;
+}
+
+big {
+	font-size: 125%;
+}
+
+figure {
+	margin: 0;
+}
+
+
+/*--------------------------------------------------------------
+General styling
+--------------------------------------------------------------*/
+
+
+img {
+	display: block;
+	border: 0;
+	width: 100%;
+	height: auto;
+}
+
+.search {
+	width: 70%;
+	position: relative;
+	display: flex;
+  }
+  
+  .searchTerm {
+	width: 70%;
+	border: 3px solid #27ae60;
+	padding: 5px;
+	height: 20px;
+	border-radius: 5px 0 0 5px;
+	outline: none;
+	color: #9DBFAF;
+  }
+  
+  .searchTerm:focus{
+	color: #666;
+  }
+  
+  .searchButton {
+	width: 35px;
+	height: 36px;
+	border: 1px solid #27ae60;
+	background: #27ae60;
+	text-align: center;
+	color: #fff;
+	border-radius: 0 5px 5px 0;
+	cursor: pointer;
+	font-size: 20px;
+  }
+  
+
+/*--------------------------------------------------------------
+Header:
+--------------------------------------------------------------*/
+
+.masthead {
+	padding: 0 1em;
+	text-align: center;
+	border-bottom: 1px solid hsl(0, 0%, 90%);
+}
+
+/*--------------------------------------------------------------
+Navigation:
+--------------------------------------------------------------*/
+.main-nav {
+	padding: 1em;
+	font-size: 1.1em;
+	color: white;
+    background-color: hsl(0, 0%, 10%);
+}
+
+.trigger {
+	display: none;
+	padding: .1em .5em;
+	color: white;
+	background: hsl(0, 0%, 10%);
+	border: none;
+	transform: rotate(90deg);
+}
+
+.trigger:focus,
+.trigger:hover {
+	outline: 2px dotted hsl(0, 0%, 10%);
+}
+
+.trigger:focus {
+	outline-color: white;
+}
+
+.main-nav ul {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+.main-nav a {
+	display: block;
+	padding: .4em 1em;
+	color: white;
+	text-decoration: none;
+}
+
+.main-nav a:focus,
+.main-nav a:hover {
+	text-decoration: underline;
+}
+
+/*--------------------------------------------------------------
+Cards:
+--------------------------------------------------------------*/
+
+.cards {
+	max-width: 35em;
+	margin: 1em auto;
+	padding: 0;
+	list-style-type: none;
+
+}
+
+.cards a {
+	display: block;
+	margin-bottom: 1em;
+	text-decoration: none;
+}
+
+.caption {
+	padding: 1em;
+	font-size: 90%;
+	color: black;
+}
+
+.caption-title {
+	margin: 0;
+	font-size: 1.4em;
+	line-height: 1em;
+}
+
+.caption p {
+	margin-top: .5em;
+	margin-bottom: 0;
+}
+
+.cards a:focus .caption,
+.cards a:hover .caption {
+	background: hsl(0, 0%, 97%);
+}
+
+
+/*--------------------------------------------------------------
+Sidebar:
+--------------------------------------------------------------*/
+
+.twin {
+	margin-top:25px; 
+	padding: .2em;
+	background: #2185C5;
+	color: white;
+	font-size: 15px;
+}
+
+.twin:last-of-type {
+	background: #FF7F66;
+}
+.twin h2{
+	color: #f1f1f1;
+}
+/*--------------------------------------------------------------
+Footer:
+--------------------------------------------------------------*/
+
+.colophon {
+	padding: 2em;
+	background: hsl(0, 0%, 10%);
+	color: white;
+	text-align: center;
+}
+
+.colophon a {
+	color: white;
+}
+
+.colophon a:hover,
+.colophon a:focus {
+	border-bottom: 1px solid white;
+	text-decoration: none;
+	color:#27ae60;
+}
+
+/*--------------------------------------------------------------
+CSS Grid layout for wider screens, when browser supports grid:
+--------------------------------------------------------------*/
+@supports (grid-area: auto) {
+
+	@media screen and (min-width: 27em) {
+		.logo{
+			width:70px;
+			margin-left: 150px;
+				
+		}
+		.site {
+			position: relative;
+			left: -14em;
+			overflow-x: hidden;
+			display: grid;
+			grid-template-columns: 15em calc(100% - 1em);
+			grid-template-areas:
+				"nav header"
+				"nav main"
+				"nav sidebar"
+				"nav footer";
+			transition: left .6s;
+		}
+
+		.reveal {
+			left: 0;
+		}
+
+		.masthead {
+			grid-area: header;
+		}
+
+		.main-area {
+			grid-area: main;
+		}
+
+		.sidebar {
+			grid-area: sidebar;
+		}
+
+		.colophon {
+			grid-area: footer;
+		}
+
+		.main-nav {
+			grid-area: nav;
+		}
+
+		.main-nav ul {
+			/*position: fixed;*/
+			display: none;
+			flex-direction: column;
+		}
+
+		.open ul {
+			display: flex;
+		}
+
+		.trigger {
+			position: fixed;
+			display: block;
+			top: 1.5em;
+			left: .2em;
+			transition: left .6s;
+		}
+
+		.reveal .trigger {
+			left: 14em;
+		}
+
+
+		.cards {
+			margin: 0 auto;
+			padding: 1em;
+		}
+
+		.card {
+			margin: 1em 0;
+			padding: .5em;
+			display: grid;
+			grid-template-columns: 8em auto;
+		}
+
+		.cards a:focus,
+		.cards a:hover {
+			outline: 1px solid hsl(0, 0%, 80%);
+		}
+		.cards {
+			max-width: none;
+			margin: 0em 0em;
+			display: grid;
+			grid-template-columns: repeat(1,  60em);
+			grid-gap: 0em;
+			justify-content: center;
+		}
+		.card {
+			margin: 0;
+		}
+
+		.double {
+			grid-row: span 2;
+		}
+
+		.double .card {
+			display: block;
+		}
+		.container {
+			border: 2px solid #ccc;
+			background-color: #eee;
+			border-radius: 5px;
+			padding: 16px;
+			margin: 16px 0
+		  }
+		  
+		  .container::after {
+			content: "";
+			clear: both;
+			display: table;
+		  }
+		  
+		  .container img {
+			float: left;
+			margin-right: 20px;
+			border-radius: 50%;
+		  }
+		  
+		  .container span {
+			font-size: 20px;
+			margin-right: 15px;
+		  }
+		  .tags{
+			  float:right;
+			  cursor: pointer;
+			 
+		  }
+		  i:hover {
+			color: #27ae60;
+		}
+		#comment  {
+			width: 100%;
+			padding: 12px 20px;
+			margin: 8px 0;
+			box-sizing: border-box;
+			border: 2px solid #27ae60;
+			border-radius: 4px;
+		  }
+
+	}
+
+	@media screen and (min-width: 60em) {
+		.logo{
+			width:100px;
+			margin-left: 70px;
+			margin-bottom: -30px;
+		}
+	}	
+
+	@media screen and (min-width: 78em) {
+
+		.site {
+			grid-template-columns: 15em calc(100% - 16em) 15em;
+			grid-template-areas:
+				"nav header header"
+				"nav main sidebar"
+				"nav footer footer";
+		}
+	}
+
+}
